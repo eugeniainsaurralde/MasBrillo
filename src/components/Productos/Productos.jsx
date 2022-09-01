@@ -9,7 +9,7 @@ const Productos= (props)=>{
         <div>
             {
                 stock.map( (e)=>{
-                    return <li>{e.nombre},{e.precio},{e.color}</li>
+                    return <li key={e.id}>{e.nombre},{e.precio},{e.color}</li>
                 })
             }
         </div>
