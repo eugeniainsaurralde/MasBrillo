@@ -24,21 +24,21 @@ const ItemCount = (props) =>{
     }
 
     return(
-        <div className="container py-5">
+        <div className="container py-1 ">
             <div className="row">
-                <div className="col-md-2"> 
+                <div className="col-md-6"> 
                 <p className="text-center">Producto</p>
                     <div className="input-group">
-                        <input type="button" class="btn btn-secondary" id="btnGroupAddon" value="-" onClick={()=> 
+                        <input type="button" className="btn btn-secondary" id="btnGroupAddon" value="-" onClick={()=> 
                         {decrementarCantidad (Cantidad-1)}}/>
-                        <input type="text" class="form-control" value= {Cantidad}/>
-                        <input type="button" class="btn btn-secondary" id="btnGroupAddon" value="+" onClick={()=> 
+                        <input type="text" className="form-control" value= {Cantidad} onChange={()=>{}}/>
+                        <input type="button" className="btn btn-secondary" id="btnGroupAddon" value="+" onClick={()=> 
                         {incrementarCantidad (Cantidad+1)}}/>
                     </div>
                     <div className="d-grid gap-2 pt-3">
                         <input type="button" className="btn btn-secondary" value="Agregar al carrito" onClick={()=>{agregarProductos()}}/>
                     </div>   
-                    <p>Productos seleccionados: {ItemAdd}</p>
+                    <p className="text-center">Productos seleccionados: {ItemAdd}</p>
                 </div>
             </div>                  
         </div>       
