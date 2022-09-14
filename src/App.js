@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
+import ItemCount from './components/ItemCount';
 import Productos from './components/Productos/Productos';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div>
       <Header />
       <Productos items={{stock}}/>
+      <ItemCount stock="10" initial= {1} onAdd={0}/>
     </div>
   );
 }

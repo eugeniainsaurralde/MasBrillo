@@ -1,9 +1,9 @@
 import React from "react";
 
-const Productos= (props)=>{
+const Productos= ({items})=>{
     const{
         stock
-    }= props;
+    }= items;
 
     return(
         <div>
@@ -17,3 +17,4 @@ const Productos= (props)=>{
 }
 
 export default Productos;
+
