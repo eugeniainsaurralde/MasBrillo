@@ -24,9 +24,9 @@ const ItemCount = (props) =>{
     }
 
     return(
-        <div className="container py-1 ">
+        <div className="container py-1 center">
             <div className="row">
-                <div className="col-md-6"> 
+                <div className="col-md-5"> 
                 <p className="text-center">Producto</p>
                     <div className="input-group">
                         <input type="button" className="btn btn-secondary" id="btnGroupAddon" value="-" onClick={()=> 
