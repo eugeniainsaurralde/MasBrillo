@@ -13,18 +13,18 @@ const Header= () =>{
                 <div>
                     <ul className="header__items">
                         <li>
-                            <a href="#">Servicios Disponibles</a>
+                            <NavLink to='/servicios'>Servicios Disponibles</NavLink>
                             <ul>
-                                <li><a href="#">Pestañas</a></li>
-                                <li><a href="#">Cejas</a></li>
-                                <li><a href="#">Uñas</a></li>
-                                <li><a href="#">Depilacion</a></li>
+                                <li><NavLink to='/servicios/pestañas'>Pestañas</NavLink></li>
+                                <li><NavLink to='/servicios/cejas'>Cejas</NavLink></li>
+                                <li><NavLink to='/servicios/unas'>Uñas</NavLink></li>
+                                <li><NavLink to='/servicios/depilacion'>Depilacion</NavLink></li>
                             </ul>
                         </li>
-                        <li><a href="#">Cuidados</a></li>
+                        <li><NavLink to='/cuidados'>Cuidados</NavLink></li>
                         <li><NavLink to ={"/carrito"}>Carrito</NavLink></li>
-                        <li><a href="#">Contactame</a></li>
-                        <li><a href="#">About Us</a></li>   
+                        <li><NavLink to='/contactame'>Contactame</NavLink></li>
+                        <li><NavLink to='/aboutUs'>About Us</NavLink></li>   
                     </ul>
                 </div>
                 <ImagenesContainer img= {carritoIcono}/>
