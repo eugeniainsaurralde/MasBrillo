@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "./ItemList";
-import { Productos } from "./Productos";
+import { Productos } from "../Productos";
 
 
 const ItemListContainer= ()=>{

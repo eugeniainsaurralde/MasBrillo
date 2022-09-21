@@ -1,8 +1,8 @@
 import React from "react";
-import ItemCount from "./ItemCount";
-import "./style.css";
+import ItemCount from "../ItemCount/ItemCount";
+import "../style.css";
 
-const ImagesProductos= require.context('../components/Pictures',true)
+/* const ImagesProductos= require.context('../Pictures',true) */
 
 const ItemDetail= ({detail})=>{
 
@@ -10,8 +10,8 @@ const ItemDetail= ({detail})=>{
             <div className="card mb-3 border-danger" style={{maxWidth: 740}}>
                 <div className="row g-0">
                     <div className="col-md-6">
-                       {/*  <img src= {ImagesProductos(`./${detail.id}.jpg`)} className="img-fluid rounded-start" alt={detail.nombre}/> */}
-                       <img src= {ImagesProductos("./1.jpg")} className="img-fluid rounded-start imagenesProductos" alt={detail.nombre}/>
+                      {/*   <img src= {ImagesProductos(`./${detail.imagen}.jpg`)} className="img-fluid rounded-start" alt={detail.nombre}/> */}
+                       <img src= {detail.imagen} className="img-fluid rounded-start" alt={detail.nombre}/>
                     </div>
                     <div className="col-md-6">
                         <div className="card-body">
@@ -25,7 +25,6 @@ const ItemDetail= ({detail})=>{
                 </div>
             </div>
     )
-
 }
 
-export default ItemDetail
+export default ItemDetail;

@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 import "./Header.css"
 import ImagenesContainer from "../Imagenes";
 import logo from '../Pictures/logoMasBrillo.jpg'
@@ -21,7 +22,7 @@ const Header= () =>{
                             </ul>
                         </li>
                         <li><a href="#">Cuidados</a></li>
-                        <li><a href="#">Precios</a></li>
+                        <li><NavLink to ={"/carrito"}>Carrito</NavLink></li>
                         <li><a href="#">Contactame</a></li>
                         <li><a href="#">About Us</a></li>   
                     </ul>
